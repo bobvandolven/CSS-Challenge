@@ -21,6 +21,18 @@ body {
     padding: 15px;
 }
 
+.Content2 {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+}
+
+
+.Logo {
+    text-align: center;
+}
+
+
 .Content h5 {
     color: gray;
 }
@@ -29,6 +41,10 @@ body {
     text-decoration: none;
     color: crimson;
     margin: 10px 0;
+}
+
+.LBLink:hover {
+    text-decoration: underline;
 }
 
 li {
@@ -81,14 +97,6 @@ img {
     margin-top: 5px;
 }
 /*-------------------------------------*/
-.Logo {
-    text-align: center;
-}
-
-nav {
-    background-color: black;
-}
-
 li a {
     text-decoration: none;
     color: white;
@@ -182,14 +190,23 @@ ul.submenu li a:hover{
  /*---------------------------------------------*/
 
 @media all and (min-width: 550px) {
+    .Content, .Content2 {
+        width: 44%;
+        float: left;
+    }
 }
-
-
 
 @media all and (min-width: 920px) {
+    .Content, .Content2 {
+        width: 32%;
+        float: left;
+    }
 }
 
-
-
-@media all and (min-width: 1200px) {
+@media all and (min-width: 920px) {
+    .Content2 {
+        display: block;
+        width: 25%;
+        float: top;
+    }
 }
